@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="script.js"></script> -->
+
+</head>
+
+<body>
+    <div class="box">
+        <audio autoplay loop >
+            <source src="/audio/tom.mp3" type="audio/mp3" >
+         </audio>
+
+
+        <div class="header">
+
+            <h1>हमारी तरफ से</h1>
+        </div>
+
+        <div class="main">
+            <div class="mimg">
+                <img src="giphy.gif" alt="">
+            </div>
+        </div>
+        <div class="name">
+            <h3 id="result">Urvashi Yadav</h3>
+        </div>
+        <div class="flowers">
+            <img src="redbg.png" alt="">
+            <img src="redbg.png" alt="">
+            <img src="yellowbg.png" alt="">
+            <img src="redbg.png" alt="">
+            <img src="yellowbg.png" alt="">
+            <img src="redbg.png" alt="">
+            <img src="yellowbg.png" alt="">
+            <img src="redbg.png" alt="">
+            <img src="yellowbg.png" alt="">
+        </div>
+    </div>
+    
+    <script>
+        var nameValue = localStorage.getItem("nameValue");
+        var resultElement = document.getElementById("result");
+        
+        if (nameValue) {
+            resultElement.innerHTML = `${nameValue}`;
+        } else {
+            resultElement.innerHTML = "Name not provided.";
+        }
+    </script>
+
+    
+</body>
+
+</html>
