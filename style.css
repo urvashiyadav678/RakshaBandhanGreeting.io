@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Baloo+2:wght@800&family=Baloo+Bhaina+2&family=Tiro+Devanagari+Hindi&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.box {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom left, rgb(255, 255, 255), #90dfff);
+    border: 3px dashed rgb(5, 44, 52);
+    overflow: hidden;
+}
+
+.header {
+    width: 100%;
+    margin: 0 auto;
+    /* align-items: center; */
+    text-align: center;
+    padding: 60px 40px;
+
+    /* background-color: red; */
+    font-size: 4vw;
+}
+
+.header h1 {
+    /* font-weight: 1000; */
+    border: 5px double black;
+    padding: 12px 0;
+    border-radius: 50px;
+    color: rgb(247, 4, 219);
+    /* font-family: cursive; */
+    font-family: 'Tiro Devanagari Hindi', serif;
+}
+
+.main {
+    display: grid;
+    place-items: center;
+    padding-bottom: 35px;
+}
+
+.main .mimg img {
+    width: 80vw;
+}
+
+.name {
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 30px;
+    font-family: cursive;
+    color: rgb(92, 81, 179);
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+    color: transparent;
+}
+.flowers{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: -25px;
+}
+
+.flowers img{
+    width: 25px;   
+    animation: flower 7s linear infinite;
+}
+
+@keyframes flower {
+
+    0%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    50%{
+        
+        opacity: 0;
+    }
+    75%{
+        
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(80vh);
+        opacity: 1;
+    }
+    
+}
+
+.flowers img:nth-child(1){
+    animation-delay:5.5s ;
+}
+.flowers img:nth-child(2){
+    animation-delay:7s ;
+}
+.flowers img:nth-child(3){
+    animation-delay:2.5s ;
+}
+.flowers img:nth-child(4){
+    animation-delay:5s ;
+}
+.flowers img:nth-child(5){
+    animation-delay:3s ;
+}
+.flowers img:nth-child(6){
+    animation-delay:1.5s ;
+}
+.flowers img:nth-child(7){
+    animation-delay:6.2s ;
+}
+.flowers img:nth-child(8){
+    animation-delay:4.2s ;
+}
+.flowers img:nth-child(9){
+    animation-delay:6.5s ;
+}
+
