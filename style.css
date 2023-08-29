@@ -123,4 +123,9 @@
 .flowers img:nth-child(9){
     animation-delay:6.5s ;
 }
-
+.message{
+    padding: 3px 20px;
+    text-align: center;
+    font-family: cursive;
+    color: rgb(70, 11, 126);
+}
