@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFO</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Baloo+2:wght@800&family=Baloo+Bhaina+2&family=Tiro+Devanagari+Hindi&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        .info {
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(to bottom, #30abb3, #01296f);
+            color: white;
+            font-family: "baloo bhaina", Cursive;
+        }
+
+        .inputs {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .btn button {
+            padding: 10px 20px;
+            font-size: 25px;
+            color: rgb(3, 23, 65);
+            background-color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 25px;
+            font-weight: 550;
+            box-shadow: 2px 3px 6px rgb(0, 0, 0);
+        }
+
+        .btn button:hover {
+            background-color: rgb(1, 1, 72);
+            color: white;
+        }
+        .btn button:active {
+            background-color: rgb(1, 1, 72);
+            color: white;
+        }
+
+        .questions input {
+            font-size: 15px;
+            line-height: 1.5;
+        }
+        a{
+            text-decoration: none;
+            list-style: none;
+            color: rgb(3, 23, 65);
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="info">
+        <div class="inputs">
+            <div class="questions">
+
+                <label for="Name">Enter Your Name :</label><br>
+                <input type="text" id="name" size="30" autofocus required>
+            </div>
+            <div class="btn">
+                <button onclick="showname()"> Submit</button>
+            </div>
+        </div>
+    </div>
+
+   <script src="script.js"></script>
+</body>
+
+</html>
